@@ -16,7 +16,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.teal,
           title: const Center(
-            child: Text('Micard'),
+            child: Text('My card'),
+          ),
+        ),
+        body: SafeArea(
+          child: Container(
+            color: Colors.teal[50],
+            height: 100.0,
+            width: 100.0,
+            margin: const EdgeInsets.all(20.0),
+            padding: const EdgeInsets.all(20.0),
+            child: const Text("Hello"),
           ),
         ),
         backgroundColor: Colors.white,
