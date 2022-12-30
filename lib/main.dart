@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal,
+          backgroundColor: Colors.teal.shade300,
           title: const Center(
             child: Text('My card'),
           ),
@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Colors.teal.shade900,
+                color: Colors.teal.shade600,
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 50.0),
                 padding: const EdgeInsets.all(8.0),
@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Colors.teal.shade900,
+                color: Colors.teal.shade600,
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 50.0),
                 padding: const EdgeInsets.all(8.0),
@@ -98,7 +98,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ],
                 ),
-              )
+              ),
             ],
           ),
         ),
