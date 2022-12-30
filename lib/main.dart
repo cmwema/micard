@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
@@ -23,12 +24,12 @@ class MyApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
-              CircleAvatar(
-                radius: 40.0,
+            children: [
+              const CircleAvatar(
+                radius: 60.0,
                 foregroundImage: AssetImage('images/profile.jpg'),
               ),
-              Text(
+              const Text(
                 'Caleb Mwema',
                 style: TextStyle(
                   color: Colors.black,
@@ -37,17 +38,71 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Text(
+              const Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  color: Colors.black,
-                  fontFamily: 'SourceSansPro',
+                  color: Colors.black87,
+                  fontFamily: 'Source Sans Pro',
+                  fontSize: 15.0,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
+              Container(
+                color: Colors.teal.shade900,
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 50.0),
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.perm_phone_msg,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 20.0,
+                    ),
+                    Text(
+                      '+254 790 028 824',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                color: Colors.teal.shade900,
+                margin: const EdgeInsets.symmetric(
+                    vertical: 10.0, horizontal: 50.0),
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Icon(
+                      Icons.email_outlined,
+                      color: Colors.white,
+                    ),
+                    SizedBox(
+                      width: 10.0,
+                    ),
+                    Text(
+                      'calebmwema65@gmail.com',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0,
+                      ),
+                    ),
+                  ],
+                ),
+              )
             ],
           ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.teal[50],
       ),
     );
   }
