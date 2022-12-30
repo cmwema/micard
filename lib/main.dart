@@ -48,7 +48,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Colors.teal.shade600,
+                color: Colors.white,
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 50.0),
                 padding: const EdgeInsets.all(8.0),
@@ -57,7 +57,7 @@ class MyApp extends StatelessWidget {
                   children: const [
                     Icon(
                       Icons.perm_phone_msg,
-                      color: Colors.white,
+                      color: Colors.teal,
                     ),
                     SizedBox(
                       width: 20.0,
@@ -65,7 +65,7 @@ class MyApp extends StatelessWidget {
                     Text(
                       '+254 790 028 824',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.teal,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
@@ -74,7 +74,7 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Container(
-                color: Colors.teal.shade600,
+                color: Colors.white,
                 margin: const EdgeInsets.symmetric(
                     vertical: 10.0, horizontal: 50.0),
                 padding: const EdgeInsets.all(8.0),
@@ -83,7 +83,7 @@ class MyApp extends StatelessWidget {
                   children: const [
                     Icon(
                       Icons.email_outlined,
-                      color: Colors.white,
+                      color: Colors.teal,
                     ),
                     SizedBox(
                       width: 10.0,
@@ -91,7 +91,7 @@ class MyApp extends StatelessWidget {
                     Text(
                       'calebmwema65@gmail.com',
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.teal,
                         fontFamily: 'Source Sans Pro',
                         fontSize: 20.0,
                       ),
