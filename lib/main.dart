@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.teal.shade300,
+          backgroundColor: Colors.teal.shade600,
           title: const Center(
             child: Text('My card'),
           ),
@@ -29,21 +29,21 @@ class MyApp extends StatelessWidget {
                 radius: 60.0,
                 foregroundImage: AssetImage('images/profile.jpg'),
               ),
-              const Text(
+              Text(
                 'Caleb Mwema',
                 style: TextStyle(
-                  color: Colors.black,
+                  color: Colors.amber.shade900,
                   fontSize: 30.0,
                   fontFamily: 'KaushanScript',
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              const Text(
+              Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  color: Colors.black87,
+                  color: Colors.grey.shade700,
                   fontFamily: 'Source Sans Pro',
-                  fontSize: 15.0,
+                  fontSize: 13.0,
                   fontWeight: FontWeight.bold,
                 ),
               ),
